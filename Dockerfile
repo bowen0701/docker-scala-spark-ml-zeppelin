@@ -1,4 +1,4 @@
-# Docker settings: Ubuntu, Scala.
+# Docker settings: Ubuntu, OpenJDK, and Scala.
 
 FROM ubuntu:16.04
 
