@@ -13,7 +13,7 @@ Based on the above fundamentals, I start building my own Docker for Scala; pleas
 - [**DockerFile**](./Dockerfile)
 - [**docker-compose.yaml**](./docker-compose.yaml)
 
-Note that our Docker is based on basic docker image for **Ubuntu** only, `ubuntu:16.04`. Further, since Scala is built upon Java, which is very difficult to install by runnning this scripts: `apt-get install -y oracle-java8-installer`, due to Oracle's action, we adopt **OpenJDK** instead.
+Note that our Docker is based on basic docker image for **Ubuntu** only, `ubuntu:16.04`. Further, since Scala is built upon Java, but it is very difficult to install the latter by runnning this scripts now: `apt-get install -y oracle-java8-installer`, due to Oracle's action, we adopt **OpenJDK** instead.
 
 Now based on the above two files, we can create our Docker container with Scala by the following procedure:
 
