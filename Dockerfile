@@ -27,3 +27,5 @@ RUN wget www.scala-lang.org/files/archive/scala-$SCALA_VERSION.deb && \
     dpkg -i scala-$SCALA_VERSION.deb
 
 WORKDIR /bowenli
+
+# CMD ["/bin/bash"]
