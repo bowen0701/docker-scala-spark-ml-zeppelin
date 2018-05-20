@@ -23,6 +23,10 @@ Now based on the above two files, we can create our Docker container with Scala 
 - ssh into Docker container: `docker exec -it <container_id> \bin\bash`
 - Now we can start playing Scala by typing `scala` to go into Scala interpreter, which is also called the **REPL (Read, Evaluate, Print, Loop),** or execute your script file by using `scala <YourScalaFile.scala>`.
 
+<div style="text-align:center">
+<img src="/images/docker_scala.png" alt="Drawing" style="width: 550px;"/>
+</div>
+
 TODO: The future plan for this Docker for Scala is extending it to contain **Spark** and **Zeppelin Notebook.**
 
 Stay tuned. :-)
