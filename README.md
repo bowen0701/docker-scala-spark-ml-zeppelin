@@ -21,8 +21,8 @@ Now based on the above two files, we can create our Docker container with Scala 
 - Then launch Docker container in background mode by `docker-compose up -d`
 - Check Docker container ID by `docker ps`
 - ssh into Docker container: `docker exec -it <container_id> \bin\bash`
-- Now we can start playing Scala by typing `scala` to go into Scala interpreter, which is also called the **REPL (Read, Evaluate, Print, Lopp),** or execute your script file by using `scala <YourScalaFile.scala>`.
+- Now we can start playing Scala by typing `scala` to go into Scala interpreter, which is also called the **REPL (Read, Evaluate, Print, Loop),** or execute your script file by using `scala <YourScalaFile.scala>`.
 
-TODO: The future plan for this Docker for Scala is extending it to contain **Spark** and **Zeppelin.**
+TODO: The future plan for this Docker for Scala is extending it to contain **Spark** and **Zeppelin Notebook.**
 
 Stay tuned. :-)
