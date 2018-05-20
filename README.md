@@ -1,4 +1,4 @@
-# Learning Scala for Machine Learning
+# Learn Scala for Machine Learning
 
 This project is to collect my practices for learning Scala, with the purpose of building machine learning-based products and targeting people with Python programming background, like me. 
 
