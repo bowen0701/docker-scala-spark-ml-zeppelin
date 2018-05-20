@@ -6,7 +6,7 @@ I think the above is a good starting point, because a lot of machine learing pra
 
 ## Docker for Scala
 
-For introduction to **Docker** please refer to my [docker-python3-ml-jupyter](https://github.com/bowen0701/docker-python3-ml-jupyter) repo, with detailed explanations for [DockerFile](https://github.com/bowen0701/docker-python3-ml-jupyter/blob/master/Dockerfile) and [docker-compose.yml](https://github.com/bowen0701/docker-python3-ml-jupyter/blob/master/docker-compose.yml).
+Why **Docker** and Docker for machine learning? I provided some discussions in the README of my [docker-python3-ml-jupyter](https://github.com/bowen0701/docker-python3-ml-jupyter) repo. For introduction to Docker please refer to it as well, which includes detailed explanations for [DockerFile](https://github.com/bowen0701/docker-python3-ml-jupyter/blob/master/Dockerfile) and [docker-compose.yml](https://github.com/bowen0701/docker-python3-ml-jupyter/blob/master/docker-compose.yml).
 
 Based on the above fundamentals, I start building my own Docker for Scala; please see the following two documents:
 
