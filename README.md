@@ -27,6 +27,6 @@ Now based on the above two files, we can create our Docker container with Scala 
 <img src="/images/docker_scala.png" alt="Drawing" style="width: 500px;"/>
 </div>
 
-TODO: The future plan for this Docker for Scala is extending it to contain **Spark** and **Zeppelin Notebook.**
+TODO: The future plan for this Docker for Scala is extending it to contain **sbt**, **Spark** and **Zeppelin Notebook.**
 
 Stay tuned. :-)
