@@ -50,12 +50,7 @@ RUN mkdir -p ${ZEPPELIN_HOME} \
   && mkdir -p ${ZEPPELIN_HOME}/logs \
   && mkdir -p ${ZEPPELIN_HOME}/run
 
-VOLUME ${ZEPPELIN_HOME}
+ENTRYPOINT $ZEPPELIN_HOME/bin/zeppelin-daemon.sh start && bash
 
 WORKDIR /${USER_NAME}
-
-# TODO: Correct starting Zeppelin Notebook.
-CMD "cd /usr/zeppelin && cd zeppelin-${ZEPPELIN_VERSION}-bin-all && bin/zeppelin-daemon.sh start"
-# CMD ["cd /usr/zeppelin && cd zeppelin-${ZEPPELIN_VERSION}-bin-all && \
-#       bin/zeppelin-daemon.sh start"]
 # CMD ["/bin/bash"]
