@@ -1,4 +1,4 @@
-package com
+package hal
 
 object HelloWorld {
   def main(args: Array[String]) {
