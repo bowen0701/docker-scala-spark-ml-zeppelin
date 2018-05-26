@@ -1,4 +1,4 @@
-# Docker settings: Ubuntu, OpenJDK, and Scala.
+# Docker settings: Ubuntu, OpenJDK, Scala and Zeppelin Notebook.
 
 FROM ubuntu:16.04
 
