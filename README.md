@@ -33,9 +33,9 @@ Now based on the above two files, we can create our Docker container with Scala 
 
 To use `sbt` we would like to put our Scala project scripts in a nested directories 
 
-`src/main/scala/com`
+`src/main/scala/org`
 
-Note that "com" is a general-purpose directory name, which could be our comapany, org or team name, to separate scripts for preventing conflicts.
+Note that "org" is a general-purpose directory name, which could be our org, comapany, or team name, to separate scripts for preventing conflicts.
 
 ### Create build.sbt
 
@@ -48,10 +48,10 @@ version := "1.0.0"
 
 scalaVersion := "2.12.6"
 
-organization := "com"
+organization := "org"
 ```
 
-Note for organization I used a general word "com", which could be our comapany, org or team name, which has the same purpose as "com" in nested directories `src/main/scala/com`.
+Note for organization I used a general word "org", which serves the same purpose as "org" in nested directories `src/main/scala/org`.
 
 ### Start sbt Shell
 
