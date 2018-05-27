@@ -4,7 +4,7 @@ services:
     build: .
     image: scala-ml:latest
     ports:
-     - "8889:8889"
+     - "8890:8890"
     volumes:
      - /Users/bowenli:/bowenli
     stdin_open: true
