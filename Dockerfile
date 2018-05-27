@@ -9,6 +9,9 @@ ARG USER_NAME="bowenli"
 ARG JDK_VERSION="8"
 ARG SCALA_VERSION="2.12.6"
 ARG SBT_VERSION="1.1.4"
+ARG ZEPPELIN_VERSION="0.7.2"
+
+ENV ZEPPELIN_PORT_NUM 8890
 
 # Install basic libraris and Open JDK.
 RUN apt-get update && apt-get install -y \
