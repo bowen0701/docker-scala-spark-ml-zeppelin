@@ -53,7 +53,8 @@ RUN mkdir -p ${ZEPPELIN_HOME} \
   && mkdir -p ${ZEPPELIN_HOME}/logs \
   && mkdir -p ${ZEPPELIN_HOME}/run
 
-ENTRYPOINT $ZEPPELIN_HOME/bin/zeppelin-daemon.sh start && bash
-
 WORKDIR /${USER_NAME}
+
 # CMD ["/bin/bash"]
+
+ENTRYPOINT $ZEPPELIN_HOME/bin/zeppelin-daemon.sh start && bash
