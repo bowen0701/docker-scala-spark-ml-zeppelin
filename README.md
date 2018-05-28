@@ -57,6 +57,16 @@ Note for organization I used a general word "org", which serves the same purpose
 
 Run the `sbt` commend in the repo folder, this will create "project" folder with generated files, which we can ignore for now. Then in `sbt` shell we can use `compile` commend to compile our Scala scripts in project, or in repo folder we can direct use `sbt compile` to achieve the same result. This will further create "target" folder with generated files, which we can ignore for now as well.
 
+## Zeppelin Notebook
+
+Why [Zeppelin Notebook](https://zeppelin.apache.org/)? Since we would like to mimic AWS EMR with Zeppelin Notebook in software configuration already. With Zeppelin Notebook we can write Scala Spark, Python, among others, to perform feature engineering prototyping and machine learning research. Note that [Jupyter Notebook](https://jupyter.org/) with [Apache Toree](https://toree.apache.org/) would be another good option, which will be explored in the near future. 
+
+To install Zeppelin Notebook, for details please see [DockerFile](/DockerFile). Further note that instead of using `CMD` to start Zeppelin Notebook, we use `ENTRYPOINT` to start it and bash shell.
+
+```
+ENTRYPOINT $ZEPPELIN_HOME/bin/zeppelin-daemon.sh start && bash
+```
+
 TODO: Extending this Docker to contain **Spark.**
 
 Stay tuned. :-)
