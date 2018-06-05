@@ -1,4 +1,4 @@
-name := "learn-scala-for-ml"
+name := "scala-spark-for-ml"
 
 version := "1.0.0"
 
