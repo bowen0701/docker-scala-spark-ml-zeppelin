@@ -55,7 +55,7 @@ Note for organization I used a general word "org", which serves the same purpose
 
 ### Start sbt Shell
 
-Run the `sbt` commend in the repo folder, this will create "project" folder with generated files, which we can ignore for now. Then in `sbt` shell we can use `compile` commend to compile our Scala scripts in project, or in repo folder we can direct use `sbt compile` to achieve the same result. This will further create "target" folder with generated files, which we can ignore for now as well.
+Run the `sbt` commend in the repo folder, this will create "project" folder with generated files, which we can ignore for now. Then in `sbt` shell we can run `compile` commend to compile our Scala scripts in project, or in repo folder we can directly run `sbt compile` to achieve the same result. This will further create "target" folder with generated files, which we can ignore for now as well.
 
 ## Zeppelin Notebook
 
