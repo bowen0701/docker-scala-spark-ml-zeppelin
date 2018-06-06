@@ -1,4 +1,4 @@
-package hal
+package com
 
 object HelloWorld {
   def main(args: Array[String]): Unit = {
