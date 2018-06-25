@@ -29,13 +29,32 @@ Now based on the above two files, we can create our Docker container with Scala 
 
 [Simple Build Tool (sbt)](https://www.scala-sbt.org/) is a build tool for Scala, Java, etc, for easy production, that is, compile our Scala scripts and run the resulting ByteCodes. Our [DockerFile](./Dockerfile) also includes sbt installation.
 
+### Files structure
+
+```
+├── build.sbt
+├── project
+│   ├── plugins.sbt
+│   └── build.properties
+├── src
+│   ├── main
+│   │   └── scala
+│   │       └── org
+│   │           └── Main.scala
+│   └── test
+│       └── scala
+│           └── vpon
+│               └── MainSpec.scala
+└── target
+```
+
 To use `sbt` we would like to put our Scala project scripts in a nested directories 
 
 `src/main/scala/com`
 
 Note that "com" is a general-purpose directory name, which could be our comapany, org, or team name, to separate scripts for preventing conflicts.
 
-### Create build.sbt
+### build.sbt
 
 `build.sbt` is a sbt file to specify project information and dependencies. For now I just add some simple information.
 
@@ -51,24 +70,30 @@ organization := "com"
 
 Note for organization I used a general-purpose word "com", which serves the same role as "com" in nested directories `src/main/scala/com`.
 
-### Start sbt Shell
+### project/plugins.sbt
+
+```
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.5")
+addSbtPlugin("com.geirsson" % "sbt-scalafmt" % "1.6.0-RC3")
+```
+
+### sbt Shell
 
 Run the `sbt` commend in the repo folder, this will create "project" folder with generated files, which we can ignore for now. Then in `sbt` shell we can run `compile` commend to compile our Scala scripts in project, or in repo folder we can direct run `sbt compile` to obtain the same result. This will further create "target" folder with generated files, which we can ignore for now as well. The basic `sbt` commands are as follows.
 
 ```
+cd repo
+
 sbt help
 
 // Login sbt console to Scala REPL mode.
-sbt console
+sbt
 
 // From the root directory of the project, compile the project.
 sbt compile
 
-// Run the project.
-sbt run
-
-// Package the project as a JAR file.
-sbt package
+// Recommended approach.
+sbt subproject/assembly
 ```
 
 ## Zeppelin Notebook
