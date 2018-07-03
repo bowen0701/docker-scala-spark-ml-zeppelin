@@ -13,7 +13,7 @@ ARG SPARK_VERSION="2.2.0"
 ARG HADOOP_VERSION="2.7"
 ARG ZEPPELIN_VERSION="0.7.2"
 
-ENV ZEPPELIN_PORT_NUM 8890
+ENV ZEPPELIN_PORT_NUM 8891
 
 # Install basic libraris and Open JDK.
 RUN apt-get update && apt-get install -y \
@@ -57,6 +57,6 @@ RUN mkdir -p ${ZEPPELIN_HOME} \
 
 WORKDIR /${USER_NAME}
 
-# CMD ["/bin/bash"]
+CMD ["/bin/bash"]
 
 ENTRYPOINT $ZEPPELIN_HOME/bin/zeppelin-daemon.sh start && bash
