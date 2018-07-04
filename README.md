@@ -89,11 +89,15 @@ sbt help
 // Login sbt console to Scala REPL mode.
 sbt
 
-// From the root directory of the project, compile the project.
-sbt compile
+// Run scalafmt
+// TODO: Add details.
+scalafmt
+
+// Ccompile the subproject.
+sbt <subproject>/compile
 
 // Recommended approach.
-sbt subproject/assembly
+sbt <subproject>/assembly
 ```
 
 ## Zeppelin Notebook
