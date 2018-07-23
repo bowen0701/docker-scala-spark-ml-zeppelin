@@ -41,10 +41,6 @@ Now based on the above two files, we can create our Docker container with Scala 
 │   │   └── scala
 │   │       └── org
 │   │           └── Main.scala
-│   └── test
-│       └── scala
-│           └── vpon
-│               └── MainSpec.scala
 └── target
 ```
 
@@ -65,16 +61,17 @@ version := "1.0.0"
 
 scalaVersion := "2.12.6"
 
-organization := "com"
+organization := "org"
 ```
 
 Note for organization I used a general-purpose word "com", which serves the same role as "com" in nested directories `src/main/scala/com`.
 
 ### project/plugins.sbt
 
+With this `sbt-assembly` we can create the jar file from the source file by sbt; see the later discussion.
+
 ```
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.5")
-addSbtPlugin("com.geirsson" % "sbt-scalafmt" % "1.6.0-RC3")
 ```
 
 ### sbt Shell
