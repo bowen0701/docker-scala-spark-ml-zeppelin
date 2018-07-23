@@ -1,4 +1,4 @@
-package com
+package org
 
 object HelloWorld {
   def main(args: Array[String]): Unit = {
